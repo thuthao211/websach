@@ -7,5 +7,5 @@ Route::get('/', function () {
 });
 
 Route::get('/bachhop',function(){
-    return 'BachHop08';
+    return 'Bach Hop';
 });
