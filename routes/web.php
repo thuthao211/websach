@@ -17,3 +17,6 @@ Route::get('/phuonganh', function () {
 Route::get('/panhle', function () {
     return 'Panh Le';
 });
+Route::get('/ThachThao', function () {
+    return 'Thach Thao';
+});
