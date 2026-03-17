@@ -8,3 +8,6 @@ Route::get('/', function () {
 Route::get('/thuthao',function(){
 return 'Thuthao211';
 });
+Route::get('/phuonganh', function () {
+    return 'Phuong Anh';
+});
