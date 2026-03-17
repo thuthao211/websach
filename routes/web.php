@@ -8,3 +8,5 @@ Route::get('/', function () {
 Route::get('/thuthao',function(){
 return 'Thuthao211';
 });
+
+Route::get('/canada', 'App\Http\Controllers\MovieController@phimCanada');
