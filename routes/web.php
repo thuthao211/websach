@@ -16,10 +16,9 @@ Route::get('/thachthao-cau74', function () {
                 ->where('runtime', '>', 120)
                 ->limit(10)
                 ->get();
-    echo "<h2>Câu 7.4: Danh sách phim dài trên 120 phút - Thành viên: Thạch Thảo</h2>";
+    echo "<h2> Danh sách phim dài trên 120 phút</h2>";
     echo "<table border='1' cellspacing='0' cellpadding='5'>";
     echo "<tr><th>Tên bộ phim</th><th>Ngày phát hành</th><th>Thời lượng (phút)</th></tr>";
-
     foreach ($movies as $movie) {
         echo "<tr>";
         echo "<td>" . $movie->movie_name . "</td>";
