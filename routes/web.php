@@ -11,3 +11,7 @@ return 'Thuthao211';
 Route::get('/phuonganh', function () {
     return 'Phuong Anh';
 });
+
+Route::get('/panhle', function () {
+    return 'Panh Le';
+});
