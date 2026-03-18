@@ -14,7 +14,6 @@ Route::get('/thuthao', function () {
 });
 
 Route::get('/thachthao', function () {
-
     $movies = DB::table('movie')
                 ->where('runtime', '>', 120)
                 ->limit(10)
