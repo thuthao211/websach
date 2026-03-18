@@ -35,11 +35,11 @@ Route::get('/movies/runtime', function () {
     return view('thachthao_74', ['data' => $movies]);
 });
 
-Route::get('/canada', [MovieController::class, 'phimCanada']);
+Route::get('/canada', 'App\Http\Controllers\MovieController@phimCanada');
 
 Route::get('/movies/action', [MovieController::class, 'actionMovies']);
 
-Route::get('/cau77', [MovieController::class, 'layThongTinPhim']);
+Route::get('/cau77', "App\Http\Controllers\MovieController@layThongTinPhim");
 
 Route::get('/top-budget', function () {
     $movies = DB::table('movie')
