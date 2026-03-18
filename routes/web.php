@@ -13,6 +13,7 @@ Route::get('/thuthao', function () {
     return 'Thuthao211';
 });
 
+
 Route::get('/thachthao', function () {
     $movies = DB::table('movie')
                 ->where('runtime', '>', 120)
