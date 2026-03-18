@@ -1,11 +1,4 @@
 <?php
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> remotes/origin/thuthao
->>>>>>> remotes/origin/bachhop
 
 namespace App\Http\Controllers;
 
@@ -14,8 +7,6 @@ use Illuminate\Support\Facades\DB;
 
 class MovieController extends Controller
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function layThongTinPhim() {
     $movies =  DB::table("movie")
                     ->where('vote_average', '>', 8.0)
@@ -23,10 +14,8 @@ class MovieController extends Controller
                     ->get();
 
     return view('cau77', compact('movies')); }
-}
-=======
-=======
->>>>>>> remotes/origin/bachhop
+
+
     public function actionMovies()
     {
 
@@ -39,45 +28,14 @@ class MovieController extends Controller
 
 
         return view('action', compact('movies'));
-=======
-namespace App\Http\Controllers;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-class MovieController extends Controller {
-    public function phimCanada() {
-        $ds_phim = DB::table('movie')
-            ->select('movie_name', 'release_date', 'runtime')
-            ->where('country_name', 'Canada')
-            ->get();
-        return view('canada', compact('ds_phim'));
->>>>>>> remotes/origin/nhuthao
     }
-}
-<<<<<<< HEAD
->>>>>>> remotes/origin/thuhoai
-=======
-namespace App\Http\Controllers;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-class MovieController extends Controller {
-    public function phimCanada() {
-        $ds_phim = DB::table('movie')
-            ->select('movie_name', 'release_date', 'runtime')
-            ->where('country_name', 'Canada')
-            ->get();
-        return view('canada', compact('ds_phim'));
-    }
-}
->>>>>>> remotes/origin/nhuthao
-=======
-=======
-    public function layThongTinPhim() {
-    $movies =  DB::table("movie")
-                    ->where('vote_average', '>', 8.0)
-                    ->where('vote_count', '>', 10000)
-                    ->get();
 
-    return view('cau77', compact('movies')); }
+    public function phimCanada() {
+        $ds_phim = DB::table('movie')
+            ->select('movie_name', 'release_date', 'runtime')
+            ->where('country_name', 'Canada')
+            ->get();
+        return view('canada', compact('ds_phim'));
+    }
 }
->>>>>>> remotes/origin/thuthao
->>>>>>> remotes/origin/bachhop
+
