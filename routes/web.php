@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Http\Controllers\MovieController; 
 =======
 use Illuminate\Support\Facades\DB;
@@ -74,3 +75,25 @@ Route::get('/top-budget', function () {
 =======
 Route::get('/canada', 'App\Http\Controllers\MovieController@phimCanada');
 >>>>>>> remotes/origin/nhuthao
+=======
+use Illuminate\Support\Facades\DB;
+
+Route::get('/bachhop',function(){
+    return 'Bach Hop';
+});
+
+Route::get('/theloai', function () {
+    $data = DB::select("SELECT genre_name, genre_name_vn FROM genre");
+    return view('theloai', ['data' => $data]);
+});
+
+Route::get('/top10phimvote', function () {
+    $data = DB::select("
+        SELECT movie_name, release_date, vote_average 
+        FROM movie 
+        ORDER BY vote_average DESC 
+        LIMIT 10
+    ");
+    return view('top10phimvote', ['data' => $data]);
+});
+>>>>>>> remotes/origin/bachhop
