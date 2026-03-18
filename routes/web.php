@@ -60,6 +60,7 @@ Route::get('/thachthao', function () {
 return 'Thuthao211';
 });
 
+<<<<<<< HEAD
 
 Route::get('/top-budget', function () {
     $movies = DB::table('movie')
@@ -70,3 +71,6 @@ Route::get('/top-budget', function () {
     return view('top_budget', ['movies' => $movies]);
 });
 >>>>>>> remotes/origin/phuonganh
+=======
+Route::get('/canada', 'App\Http\Controllers\MovieController@phimCanada');
+>>>>>>> remotes/origin/nhuthao
