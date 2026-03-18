@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9b73e305a9e2d343408deda4629654c990d1898e
 Route::get('/', function () {
     return view('welcome');
 });
@@ -22,3 +25,7 @@ Route::get('/ThachThao', function () {
 Route::get('/thuhoai', function () {
     return ('Thu Hoai');
 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b73e305a9e2d343408deda4629654c990d1898e
