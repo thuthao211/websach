@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class MovieController extends Controller
 {
+<<<<<<< HEAD
     public function layThongTinPhim() {
     $movies =  DB::table("movie")
                     ->where('vote_average', '>', 8.0)
@@ -15,3 +16,19 @@ class MovieController extends Controller
 
     return view('cau77', compact('movies')); }
 }
+=======
+    public function actionMovies()
+    {
+
+        $movies = DB::table('movie')
+            ->join('movie_genre', 'movie.id', '=', 'movie_genre.id_movie')
+            ->join('genre', 'movie_genre.id_genre', '=', 'genre.id')
+            ->where('genre.genre_name', 'Action')
+            ->select('movie.movie_name', 'movie.release_date', 'movie.overview', 'movie.image_link')
+            ->get();
+
+
+        return view('action', compact('movies'));
+    }
+}
+>>>>>>> remotes/origin/thuhoai
