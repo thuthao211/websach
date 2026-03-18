@@ -2,10 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Http\Controllers\MovieController; 
 =======
 use Illuminate\Support\Facades\DB;
 >>>>>>> remotes/origin/thachthao
+=======
+use Illuminate\Support\Facades\DB;
+>>>>>>> remotes/origin/phuonganh
 
 // Route mặc định
 Route::get('/', function () {
@@ -15,6 +19,7 @@ Route::get('/', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
 Route::get('/thuthao',function(){
+<<<<<<< HEAD
     return 'Thuthao211';
 });
 
@@ -51,3 +56,17 @@ Route::get('/thachthao', function () {
     return view('thachthao_74', ['data' => $movies]);
 });
 >>>>>>> remotes/origin/thachthao
+=======
+return 'Thuthao211';
+});
+
+
+Route::get('/top-budget', function () {
+    $movies = DB::table('movie')
+                ->orderBy('budget', 'desc')
+                ->limit(10)
+                ->get();
+
+    return view('top_budget', ['movies' => $movies]);
+});
+>>>>>>> remotes/origin/phuonganh
