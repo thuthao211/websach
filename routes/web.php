@@ -1,10 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MovieController; 
 
-Route::get('/thuhoai', function () {
+Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/thuthao',function(){
-return 'Thuthao211';
+
+Route::get('/thuhoai', function () {
+    return ('Thu Hoai');
 });
+Route::get('/movies/action', [MovieController::class, 'actionMovies']);
+
