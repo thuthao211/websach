@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 
+<<<<<<< HEAD
 Route::get('/bachhop',function(){
     return 'Bach Hop';
 });
@@ -20,4 +21,14 @@ Route::get('/top10phimvote', function () {
         LIMIT 10
     ");
     return view('top10phimvote', ['data' => $data]);
+=======
+Route::get('/thuthao',function(){
+return 'Thuthao211';
+});
+Route::get('/phuonganh', function () {
+    return 'Phuong Anh';
+});
+Route::get('/bachhop',function(){
+    return 'Bach Hop';
+>>>>>>> main
 });
