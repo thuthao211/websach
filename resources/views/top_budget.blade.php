@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
     <title>Top 10 Phim Budget Cao Nhất</title>
 </head>
