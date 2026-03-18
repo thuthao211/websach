@@ -22,6 +22,7 @@ return 'Thuthao211';
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Route::get('/cau77', "App\Http\Controllers\MovieController@layThongTinPhim");
 =======
 
@@ -59,3 +60,6 @@ Route::get('/top-budget', function () {
     return view('top_budget', ['movies' => $movies]);
 });
 >>>>>>> remotes/origin/phuonganh
+=======
+Route::get('/canada', 'App\Http\Controllers\MovieController@phimCanada');
+>>>>>>> remotes/origin/nhuthao
