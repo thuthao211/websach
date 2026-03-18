@@ -1,5 +1,8 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> remotes/origin/thuthao
 
 namespace App\Http\Controllers;
 
@@ -8,6 +11,7 @@ use Illuminate\Support\Facades\DB;
 
 class MovieController extends Controller
 {
+<<<<<<< HEAD
     public function actionMovies()
     {
 
@@ -34,3 +38,13 @@ class MovieController extends Controller {
 >>>>>>> remotes/origin/nhuthao
     }
 }
+=======
+    public function layThongTinPhim() {
+    $movies =  DB::table("movie")
+                    ->where('vote_average', '>', 8.0)
+                    ->where('vote_count', '>', 10000)
+                    ->get();
+
+    return view('cau77', compact('movies')); }
+}
+>>>>>>> remotes/origin/thuthao

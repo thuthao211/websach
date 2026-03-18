@@ -62,6 +62,7 @@ return 'Thuthao211';
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 Route::get('/top-budget', function () {
     $movies = DB::table('movie')
@@ -97,3 +98,6 @@ Route::get('/top10phimvote', function () {
     return view('top10phimvote', ['data' => $data]);
 });
 >>>>>>> remotes/origin/bachhop
+=======
+Route::get('/cau77', "App\Http\Controllers\MovieController@layThongTinPhim");
+>>>>>>> remotes/origin/thuthao
