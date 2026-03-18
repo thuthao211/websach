@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\MovieController;
 
@@ -10,6 +11,16 @@ Route::get('/', function () {
 });
 
 Route::get('/thuthao', function () {
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9b73e305a9e2d343408deda4629654c990d1898e
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::get('/thuthao',function(){
+>>>>>>> c9fef094aa8c950b8f06dbbf39c95e2af77b91d2
     return 'Thuthao211';
 });
 
@@ -20,6 +31,7 @@ Route::get('/phuonganh', function () {
 Route::get('/panhle', function () {
     return 'Panh Le';
 });
+<<<<<<< HEAD
 
 Route::get('/thachthao', function () {
     return 'Thach Thao';
@@ -72,3 +84,15 @@ Route::get('/top10phimvote', function () {
     ");
     return view('top10phimvote', ['data' => $data]);
 });
+=======
+Route::get('/ThachThao', function () {
+    return 'Thach Thao';
+});
+Route::get('/thuhoai', function () {
+    return ('Thu Hoai');
+});
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b73e305a9e2d343408deda4629654c990d1898e
+>>>>>>> c9fef094aa8c950b8f06dbbf39c95e2af77b91d2
