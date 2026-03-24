@@ -16,11 +16,11 @@ class ViduLayoutController extends Controller
     public function sach()
     {
     $data = DB::select("select * from sach order by gia_ban asc limit 0,8");
-    return view("viduindex", compact("data"));
+    return view("components.viduindex", compact("data"));
     }
     function theloai($id)
     {
     $data = DB::select("select * from sach where the_loai = ?",[$id]);
-    return view("viduindex", compact("data"));
+    return view("components.viduindex", compact("data"));
     }
 }
