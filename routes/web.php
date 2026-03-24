@@ -1,12 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\DB;
-use App\Http\Controllers\ViduLayoutController;
+use App\Http\Controllers\MovieController; 
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/thuhoai', function () {
+    return ('Thu Hoai');
+});
+Route::get('/movies/action', [MovieController::class, 'actionMovies']);
+
 
 Route::get('/thuthao', function () {
     return 'Thuthao211';
@@ -26,3 +32,4 @@ Route::get('/trang1', [ViduLayoutController::class, 'trang1']);
 Route::get('/sach','App\Http\Controllers\ViduLayoutController@sach');
 
 Route::get('/sach/theloai/{id}','App\Http\Controllers\ViduLayoutController@theloai');
+
