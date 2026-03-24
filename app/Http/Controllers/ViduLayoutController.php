@@ -1,13 +1,9 @@
 <?php
-<<<<<<< HEAD
-=======
 
->>>>>>> 1e69824c31fcd6130eb5b9798a26f73d86391ef0
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-<<<<<<< HEAD
 class ViduLayoutController extends Controller
 {
 function trang1()
@@ -20,7 +16,7 @@ $data = DB::select("select * from sach order by gia_ban asc limit 0,8");
 return view("vidusach.index", compact("data"));
 }
 }
-=======
+
 
 
 class ViduLayoutController extends Controller
@@ -40,5 +36,9 @@ class ViduLayoutController extends Controller
     $data = DB::select("select * from sach where the_loai = ?",[$id]);
     return view("components.viduindex", compact("data"));
     }
+    function Chitietsach($id) {
+    $data2 = DB::table('sach')->where('id', $id)->get();
+    return view('components.chitietsach', compact('data2'));
+    }
 }
->>>>>>> 1e69824c31fcd6130eb5b9798a26f73d86391ef0
+

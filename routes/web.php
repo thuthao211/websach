@@ -1,30 +1,29 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-<<<<<<< HEAD
+ HEAD
 
 use App\Http\Controllers\MovieController; 
 use Illuminate\Support\Facades\DB;
 
 // Route mặc định
-=======
+
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\MovieController;
 use App\Http\Controllers\ViduLayoutController;
 
 // Trang chủ
->>>>>>> 1e69824c31fcd6130eb5b9798a26f73d86391ef0
+ 1e69824c31fcd6130eb5b9798a26f73d86391ef0
 Route::get('/', function () {
     return view('welcome');
 });
 
-<<<<<<< HEAD
 
 Route::get('/thuthao',function(){
 =======
 // Route từng thành viên
 Route::get('/thuthao', function () {
->>>>>>> 1e69824c31fcd6130eb5b9798a26f73d86391ef0
+
     return 'Thuthao211';
 });
 
@@ -35,7 +34,7 @@ Route::get('/phuonganh', function () {
 Route::get('/panhle', function () {
     return 'Panh Le';
 });
-<<<<<<< HEAD
+
 Route::get('/ThachThao', function () {
     return 'Thach Thao';
 });
@@ -48,8 +47,7 @@ Route::get('/movies/action', [MovieController::class, 'actionMovies']);
 Route::get('/thuthao', function () {
     return 'Thuthao211';
 });
-=======
->>>>>>> 1e69824c31fcd6130eb5b9798a26f73d86391ef0
+
 
 Route::get('/thachthao', function () {
     return 'Thach Thao';
@@ -64,7 +62,6 @@ Route::get('/bachhop', function () {
 });
 
 
-// 7.4: runtime > 120
 Route::get('/movies/runtime', function () {
     $movies = DB::table('movie')
         ->where('runtime', '>', 120)
@@ -73,9 +70,9 @@ Route::get('/movies/runtime', function () {
 
     return view('thachthao_74', ['data' => $movies]);
 });
-<<<<<<< HEAD
+
 return 'Thuthao211';
-=======
+
 
 // 7.5: Canada
 Route::get('/canada', [MovieController::class, 'phimCanada']);
@@ -96,14 +93,13 @@ Route::get('/top-budget', function () {
 
     return view('top_budget', ['movies' => $movies]);
 });
-<<<<<<< HEAD
+
 Route::get('/canada', 'App\Http\Controllers\MovieController@phimCanada');
 
 Route::get('/bachhop',function(){
     return 'Bach Hop';
 });
-=======
->>>>>>> 1e69824c31fcd6130eb5b9798a26f73d86391ef0
+
 
 Route::get('/theloai', function () {
     $data = DB::select("SELECT genre_name, genre_name_vn FROM genre");
@@ -118,7 +114,7 @@ Route::get('/top10phimvote', function () {
         LIMIT 10
     ");
     return view('top10phimvote', ['data' => $data]);
-<<<<<<< HEAD
+
 Route::get('/thuthao',function(){
 return 'Thuthao211';
 });
@@ -133,10 +129,10 @@ Route::get('/cau77', "App\Http\Controllers\MovieController@layThongTinPhim");
 
 Route::get('/trang1','App\Http\Controllers\ViduLayoutController@trang1');
 Route::get('/sach','App\Http\Controllers\ViduLayoutController@sach');
-=======
+
 });
 
 Route::get('/trang1', [ViduLayoutController::class, 'trang1']);
 Route::get('/vidu2', [ViduLayoutController::class, 'sach']);
 Route::get('/sach/theloai/{id}', [ViduLayoutController::class, 'theloai']);
->>>>>>> 1e69824c31fcd6130eb5b9798a26f73d86391ef0
+Route::get('/chitietsach/{id}', 'App\Http\Controllers\ViduLayoutController@chitietsach');
