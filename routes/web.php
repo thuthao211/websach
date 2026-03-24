@@ -1,11 +1,17 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
 use App\Http\Controllers\MovieController; 
 
+use Illuminate\Support\Facades\DB;
+
+
+// Route mặc định
 Route::get('/', function () {
     return view('welcome');
 });
+
 
 
 Route::get('/thuhoai', function () {
@@ -14,9 +20,13 @@ Route::get('/thuhoai', function () {
 Route::get('/movies/action', [MovieController::class, 'actionMovies']);
 
 
+
+// Route của Thư Thảo (Yêu cầu mục 3)
+
 Route::get('/thuthao', function () {
     return 'Thuthao211';
 });
+
 
 Route::get('/top-budget', function () {
     $movies = DB::table('movie')
@@ -32,4 +42,15 @@ Route::get('/trang1', [ViduLayoutController::class, 'trang1']);
 Route::get('/sach','App\Http\Controllers\ViduLayoutController@sach');
 
 Route::get('/sach/theloai/{id}','App\Http\Controllers\ViduLayoutController@theloai');
+
+
+
+Route::get('/thachthao', function () {
+    $movies = DB::table('movie')
+                ->where('runtime', '>', 120)
+                ->limit(10)
+                ->get();
+
+    return view('thachthao_74', ['data' => $movies]);
+});
 
