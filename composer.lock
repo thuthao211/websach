@@ -1056,6 +1056,8 @@
         {
             "name": "laravel/framework",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
             "version": "v12.54.1",
             "source": {
                 "type": "git",
@@ -1067,6 +1069,7 @@
                 "url": "https://api.github.com/repos/laravel/framework/zipball/325497463e7599cd14224c422c6e5dd2fe832868",
                 "reference": "325497463e7599cd14224c422c6e5dd2fe832868",
 =======
+>>>>>>> remotes/origin/bachhop
             "version": "v12.55.0",
             "source": {
                 "type": "git",
@@ -1077,7 +1080,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/framework/zipball/6917962a55ac91598e8c5e2ebd25e27aed121b5e",
                 "reference": "6917962a55ac91598e8c5e2ebd25e27aed121b5e",
+<<<<<<< HEAD
+=======
+            "version": "v12.54.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "325497463e7599cd14224c422c6e5dd2fe832868"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/325497463e7599cd14224c422c6e5dd2fe832868",
+                "reference": "325497463e7599cd14224c422c6e5dd2fe832868",
+>>>>>>> remotes/origin/nhuthao
+=======
 >>>>>>> remotes/origin/thachthao
+>>>>>>> remotes/origin/bachhop
                 "shasum": ""
             },
             "require": {
@@ -1287,6 +1305,8 @@
                 "source": "https://github.com/laravel/framework"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
             "time": "2026-03-10T20:25:56+00:00"
         },
         {
@@ -1302,6 +1322,7 @@
                 "url": "https://api.github.com/repos/laravel/prompts/zipball/9f0e371244eedfe2ebeaa72c79c54bb5df6e0176",
                 "reference": "9f0e371244eedfe2ebeaa72c79c54bb5df6e0176",
 =======
+>>>>>>> remotes/origin/bachhop
             "time": "2026-03-17T14:19:00+00:00"
         },
         {
@@ -1316,7 +1337,26 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/prompts/zipball/4bb8107ec97651fd3f17f897d6489dbc4d8fb999",
                 "reference": "4bb8107ec97651fd3f17f897d6489dbc4d8fb999",
+<<<<<<< HEAD
+=======
+            "time": "2026-03-10T20:25:56+00:00"
+        },
+        {
+            "name": "laravel/prompts",
+            "version": "v0.3.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/prompts.git",
+                "reference": "9f0e371244eedfe2ebeaa72c79c54bb5df6e0176"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/prompts/zipball/9f0e371244eedfe2ebeaa72c79c54bb5df6e0176",
+                "reference": "9f0e371244eedfe2ebeaa72c79c54bb5df6e0176",
+>>>>>>> remotes/origin/nhuthao
+=======
 >>>>>>> remotes/origin/thachthao
+>>>>>>> remotes/origin/bachhop
                 "shasum": ""
             },
             "require": {
@@ -1361,6 +1401,16 @@
             "support": {
                 "issues": "https://github.com/laravel/prompts/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
+                "source": "https://github.com/laravel/prompts/tree/v0.3.15"
+            },
+            "time": "2026-03-17T13:45:17+00:00"
+=======
+                "source": "https://github.com/laravel/prompts/tree/v0.3.14"
+            },
+            "time": "2026-03-01T09:02:38+00:00"
+>>>>>>> remotes/origin/nhuthao
+=======
                 "source": "https://github.com/laravel/prompts/tree/v0.3.14"
             },
             "time": "2026-03-01T09:02:38+00:00"
@@ -1369,6 +1419,7 @@
             },
             "time": "2026-03-17T13:45:17+00:00"
 >>>>>>> remotes/origin/thachthao
+>>>>>>> remotes/origin/bachhop
         },
         {
             "name": "laravel/serializable-closure",
