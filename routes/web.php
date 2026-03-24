@@ -13,3 +13,5 @@ Route::get('/cau77', "App\Http\Controllers\MovieController@layThongTinPhim");
 Route::get('/trang1','App\Http\Controllers\ViduLayoutController@trang1');
 Route::get('/vidu2','App\Http\Controllers\ViduLayoutController@sach');
 Route::get('/sach/theloai/{id}','App\Http\Controllers\ViduLayoutController@theloai');
+Route::get('/canada', 'App\Http\Controllers\MovieController@phimCanada');
+
