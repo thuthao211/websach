@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 
+
 <html >
+
 
 <html>
 <head>
@@ -8,6 +10,7 @@
 </head>
 <body>
     <h2>Danh sách 10 bộ phim có doanh thu (budget) cao nhất</h2>
+
 
     
     <ul>
@@ -19,6 +22,8 @@
             </li>
         @endforeach
     </ul>
+
+
 
 
     <table border = 1>
@@ -39,6 +44,8 @@
         @endforeach
     </ul>
 </table>
+
+
 
 </body>
 </html>

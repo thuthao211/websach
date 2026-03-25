@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\DB;
 class MovieController extends Controller
 {
 
+
+
+
     public function layThongTinPhim() {
     $movies =  DB::table("movie")
                     ->where('vote_average', '>', 8.0)
@@ -15,6 +18,8 @@ class MovieController extends Controller
                     ->get();
 
     return view('cau77', compact('movies')); }
+
+
 
 
 
@@ -31,8 +36,6 @@ class MovieController extends Controller
 
         return view('action', compact('movies'));
     }
-
-}
 
 
     public function phimCanada() {
